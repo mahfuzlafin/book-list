@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Book List</title>
+</head>
+<body>
+<!-- ================================================================================================================================ -->
+
+<div class="container">
+    <h1>Add Book</h1>
+    <form>
+        <label for="book-title">Book Title</label>
+        <input type="text" id="title">
+        <label for="author">Author</label>
+        <input type="text" id="author">
+        <label for="isbn">ISBN</label>
+        <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" id="isbn"/>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+</div>
+
+<!-- ================================================================================================================================ -->
+<!-- <script src="app.js"></script> -->
+<script src="appes6.js"></script>
+</body>
+</html>

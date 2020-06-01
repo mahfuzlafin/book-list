@@ -1,0 +1,101 @@
+*, label, input{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+body{
+    background-color: lightgreen;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+label{
+    font-size: 18px;
+    color: #6fb76f;
+}
+input[type=text], input[type=number]{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-color: lightsalmon;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+input[type=submit]{
+    padding: 7px 20px;
+    font-size: 20px;
+    background-color: lightsalmon;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.success, .error{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fdfdfd;
+    border-radius: 5px;
+}
+.success{
+    background-color: green;
+}
+.error{
+    background-color: red;
+}
+
+@media only screen and (max-width: 1015px){
+    body{
+        padding: 0 15px;
+    }
+    input[type=submit]{
+        width: 100%;
+        padding: 15px;
+        background-color: #ff9367;
+    }
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #fdfdfd;
+}
+a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: lightsalmon;
+}
+tr:nth-child(even) {
+    background-color: #ff9367;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
